@@ -1,0 +1,22 @@
+{
+    "jhipsterApp": {
+        "incidentType" : {
+            "home": {
+                "title": "Incident Types",
+                "createLabel": "Створити новий Incident Type",
+                "createOrEditLabel": "Створити чи редагувати Incident Type"
+            },
+            "created": "Новий Incident Type створений з ідентифікатором {{ param }}",
+            "updated": "Incident Type оновлений з ідентифікатором {{ param }}",
+            "deleted": "Incident Type видалений з ідентифікатором {{ param }}",
+            "delete": {
+                "question": "Ви впевнені, що хочете видалити Incident Type {{ id }}?"
+            },
+            "detail": {
+                "title": "Incident Type"
+            },
+            "name": "Name",
+            "incedent": "Incedent"
+        }
+    }
+}

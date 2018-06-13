@@ -1,0 +1,44 @@
+
+<div *ngIf="incident">
+    <h2><span jhiTranslate="jhipsterApp.incident.detail.title">Incident</span> {{incident.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="jhipsterApp.incident.description">Description</span></dt>
+        <dd>
+            <span>{{incident.description}}</span>
+        </dd>
+        <dt><span jhiTranslate="jhipsterApp.incident.employee">Employee</span></dt>
+        <dd>
+            <div *ngIf="incident.employee">
+                <a [routerLink]="['/employee', incident.employee?.id]">{{incident.employee?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="jhipsterApp.incident.department">Department</span></dt>
+        <dd>
+            <div *ngIf="incident.department">
+                <a [routerLink]="['/department', incident.department?.id]">{{incident.department?.id}}</a>
+            </div>
+        </dd>
+        <dt><span jhiTranslate="jhipsterApp.incident.incidentType">Incident Type</span></dt>
+        <dd>
+            <div *ngIf="incident.incidentType">
+                <a [routerLink]="['/incident-type', incident.incidentType?.id]">{{incident.incidentType?.id}}</a>
+            </div>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            (click)="previousState()"
+            class="btn btn-info">
+        <span class="fa fa-arrow-left"></span>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button"
+            [routerLink]="['/', { outlets: { popup: 'incident/'+ incident.id + '/edit'} }]"
+            replaceUrl="true"
+            queryParamsHandling="merge"
+            class="btn btn-primary">
+        <span class="fa fa-pencil"></span>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+    </button>
+</div>

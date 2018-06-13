@@ -1,0 +1,29 @@
+{
+    "jhipsterApp": {
+        "employee" : {
+            "home": {
+                "title": "Employees",
+                "createLabel": "Create a new Employee",
+                "createOrEditLabel": "Create or edit a Employee"
+            },
+            "created": "A new Employee is created with identifier {{ param }}",
+            "updated": "A Employee is updated with identifier {{ param }}",
+            "deleted": "A Employee is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Employee {{ id }}?"
+            },
+            "detail": {
+                "title": "Employee"
+            },
+            "fullName": "Full Name",
+            "phoneNumber": "Phone Number",
+            "alternativePhoneNumber": "Alternative Phone Number",
+            "cityPhoneNumber": "City Phone Number",
+            "fax": "Fax",
+            "email": "Email",
+            "incedent": "Incedent",
+            "job": "Job",
+            "department": "Department"
+        }
+    }
+}

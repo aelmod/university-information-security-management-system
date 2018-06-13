@@ -1,0 +1,29 @@
+{
+    "jhipsterApp": {
+        "employee" : {
+            "home": {
+                "title": "Employees",
+                "createLabel": "Створити новий Employee",
+                "createOrEditLabel": "Створити чи редагувати Employee"
+            },
+            "created": "Новий Employee створений з ідентифікатором {{ param }}",
+            "updated": "Employee оновлений з ідентифікатором {{ param }}",
+            "deleted": "Employee видалений з ідентифікатором {{ param }}",
+            "delete": {
+                "question": "Ви впевнені, що хочете видалити Employee {{ id }}?"
+            },
+            "detail": {
+                "title": "Employee"
+            },
+            "fullName": "Full Name",
+            "phoneNumber": "Phone Number",
+            "alternativePhoneNumber": "Alternative Phone Number",
+            "cityPhoneNumber": "City Phone Number",
+            "fax": "Fax",
+            "email": "Email",
+            "incedent": "Incedent",
+            "job": "Job",
+            "department": "Department"
+        }
+    }
+}
